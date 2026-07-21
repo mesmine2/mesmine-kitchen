@@ -1,0 +1,59 @@
+.testimonials-section{
+    background-color: #E9B824;
+    padding: 5rem 1.5rem;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.5px;
+}
+.testimonials-section .testimonial-card {
+  background-color: #1e824c; 
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonials-section .testimonial-author {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /*pour un leger trait en haut*/
+  padding-top: 0.75rem;
+}
+
+.testimonials-section .testimonial-text {
+  color: #f4fdf8;
+  font-size: 1rem;
+  line-height: 1.65; /*espace entre 2 lignes*/
+  position: relative;
+  font-style: italic;
+  padding-left: 1.4rem;
+}
+.testimonials-section .testimonial-text::before {
+  content: "\201C";  /* pour les guillemets(\201C)*/
+  position: absolute;
+  left: -0.15rem;
+  top: -0.5rem;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-style: normal; /*pour qu'il n'ait pas le meme style que son parent*/
+  line-height: 1;
+}
+@media (max-width: 767px) {
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+  .testimonials-section .testimonial-card {
+    max-width: 100%;
+  }
+}

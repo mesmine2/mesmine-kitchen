@@ -11,8 +11,8 @@
   margin-bottom: 1.5rem;
 }
 #menu hr{
-    width: 100px;
-    height: 3px;
+    width: 120px;
+    height: 5px;
     background: linear-gradient(90deg, #dc3545, #f0ad4e);
     border-radius: 3px;
     opacity: 1;
