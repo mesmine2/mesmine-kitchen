@@ -1,0 +1,25 @@
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 1.5rem;
+}
+
+/* Petit effet au survol de la souris */
+.list-group-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Coins arrondis sur la liste globale */
+.list-group {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Mise en avant de la ligne du jour actuel */
+.current-day {
+  background-color: #e7f5ec;
+  border-left: 4px solid #198754;
+  padding-left: calc(1.5rem - 4px); /* compense la bordure ajoutée pour ne pas décaler le texte */
+  font-weight: 500;
+}

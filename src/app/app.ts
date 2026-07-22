@@ -4,11 +4,12 @@ import { Hero } from "./component/hero/hero";
 import { Footer } from './component/footer/footer';
 import { Menu } from './component/menu/menu';
 import { Temoignages } from './component/temoignages/temoignages';
+import { Horaires } from './component/horaires/horaires';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Header,Hero,Menu,Temoignages,Footer],
+  imports: [Header,Hero,Menu,Temoignages,Horaires, Footer],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
