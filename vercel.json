@@ -1,6 +1,6 @@
 {
 "buildCommand": "npm run build",
-"outputDirectory": "dist/DEVOIRWEEK-END/browser",
+"outputDirectory": "dist/devoirWeek-end/browser",
 "rewrites": [
 {
 "source": "/(.*)",
