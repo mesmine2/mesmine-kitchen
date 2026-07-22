@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.css'],
 })
 export class Header {
-  links = ['Acceuil', 'Menu', 'Témoignages', 'Horaires', 'Contact']; //liste des liens
-  activeLink='Acceuil'; //lien actif par défaut
+  links = [
+    { label: 'acceuil', id: 'acceuil' },
+    { label: 'menu', id: 'menu' },
+    { label: 'temoignages', id: 'temoignages'},
+    { label: 'horaires', id: 'horaires'},
+    { label: 'contact', id: 'contact'},
+  ]; //liste des liens
+  activeLink='acceuil'; //lien actif par défaut
   isMenuOpen=false; //état du menu burger
   isMobile=window.innerWidth<760; //détecter si l'écran est mobile
 

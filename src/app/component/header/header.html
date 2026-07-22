@@ -5,7 +5,9 @@
         
         <nav>
             @for(link of links; track link){
-                <a href="#" [class.active]="activeLink === link" (click)="setActive(link)">{{link}}</a>
+                <a [href]="'#' + link.id" [class.active]="activeLink === link.id" (click)="setActive(link.id)">
+                    {{ link.label }}
+                </a>
             }
         </nav>
     }
